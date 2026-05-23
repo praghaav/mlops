@@ -1,2 +1,2 @@
-# tourism_project
-Tourism sale prediction model
+# ML Ops projects
+1. Tourism sale prediction model
