@@ -52,7 +52,7 @@ num_of_cld_visiting = st.number_input("NumberOfChildrenVisiting", min_value=0, m
 
 designation = st.selectbox("Designation", ["Executive","Manager","Senior Manager","AVP","VP"])
 
-monthly_income = st.number_input("MonthlyIncome", min_value=0.0, value=20000.0, step=1)
+monthly_income = st.number_input("MonthlyIncome", min_value=0.0, value=20000.0, step=0.1)
 
 
 # Assemble input into DataFrame
