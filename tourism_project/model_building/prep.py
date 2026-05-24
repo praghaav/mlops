@@ -17,7 +17,7 @@ df = pd.read_csv(DATASET_PATH)
 print("Dataset loaded successfully.")
 
 # Drop columns with unique values and unnamed
-data.drop(columns=['Unnamed: 0', 'CustomerID'], inplace = True)
+df.drop(columns=['Unnamed: 0', 'CustomerID'], inplace = True)
 
 # Categorical features in the dataset
 categorical_features = [
@@ -26,6 +26,9 @@ categorical_features = [
 
 # Target column in dataset
 target_col = 'ProdTaken'
+
+# Fixing the Gender values "Fe Male" to "Female"
+df['Gender'] = df['Gender'].replace({'Fe Male': 'Female'})
 
 # Encode categorical columns
 label_encoder = LabelEncoder()
