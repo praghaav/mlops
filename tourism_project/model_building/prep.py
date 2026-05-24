@@ -32,7 +32,7 @@ df['Gender'] = df['Gender'].replace({'Fe Male': 'Female'})
 
 # Encode categorical columns
 label_encoder = LabelEncoder()
-for col in [categorical_features]:
+for col in categorical_features:
     df[col] = label_encoder.fit_transform(df[col])
 
 # Split into X (features) and y (target)
