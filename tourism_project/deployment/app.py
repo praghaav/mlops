@@ -34,7 +34,7 @@ num_of_person_visiting = st.number_input("NumberOfPersonVisiting", min_value=0, 
 
 num_of_followups = st.number_input("NumberOfFollowups", min_value=0, max_value=100, value=2, step=1)
 
-product_pitched = selectbox("ProductPitched", ["Basic","Deluxe","Standard","Super Deluxe","King"])
+product_pitched = st.selectbox("ProductPitched", ["Basic","Deluxe","Standard","Super Deluxe","King"])
 
 preferred_property_star = st.number_input("PreferredPropertyStar", min_value=0, max_value=7, value=3, step=1)
 
